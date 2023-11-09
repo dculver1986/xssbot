@@ -29,13 +29,3 @@ while ( <FH> ) {
 }
 close (FH);
 
-
-#print $domain.'/?search='. '<IMG SRC=x onload="alert(String.fromCharCode(88,83,83))">'."\n";
-
-#my $response = $ua->get($domain.'/?search='. '<IMG SRC=x onload="alert(String.fromCharCode(88,83,83))">');
-#if ($response->is_success) {
-#    print "success\n";
-#}
-#else {
-#    die $response->status_line;
-#}
