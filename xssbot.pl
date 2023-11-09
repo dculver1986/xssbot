@@ -19,7 +19,7 @@ my $ua = LWP::UserAgent->new(ssl_opts => { verify_hostname => 0 });
 my $response;
 my @success_vectors;
 while ( <FH> ) {
-    $response = $ua->get($domain . $_);
+    $response = $ua->post($domain . $_);
     if ($response->is_success) {
         print "success with vector: " . $_;
     }
