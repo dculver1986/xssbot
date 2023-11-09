@@ -1,7 +1,6 @@
 #! /usr/bin/perl
 use strict;
 use warnings;
-use WWW::Mechanize;
 use Getopt::Long;
 use LWP::UserAgent;
 
