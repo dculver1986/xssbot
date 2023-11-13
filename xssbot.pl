@@ -11,7 +11,7 @@ GetOptions("domain=s"   => \$domain,
 	   "sleep=i"    => \$sleep)
 or die ("Error in command line arguments\n");
 
-my $filename = './vectors.txt'; # TODO: make this modifiable
+my $filename = './vectors.txt';
 
 open( FH, '<', $filename) or die $!;
 
