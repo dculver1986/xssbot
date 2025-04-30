@@ -7,6 +7,7 @@ use LWP::UserAgent;
 my $domain; # domain provided to the command line arg
 my $sleep = 1;
 
+# Command line options. Requires domain string and sleep integer >= 1
 GetOptions("domain=s"   => \$domain,
 	   "sleep=i"    => \$sleep)
 or die ("Error in command line arguments\n");
